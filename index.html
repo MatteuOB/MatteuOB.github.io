@@ -10,25 +10,22 @@
   <style>
     :root {
       --exotic-blue: #3aafa9;
-      --exotic-green: #a8e6cf;
-      --exotic-yellow: #f8efd4;
-      --exotic-orange: #ffd6ba;
-      --exotic-pink: #f6c1c1;
-      --exotic-bg1: #fafdff;
-      --exotic-bg2: #e0f7fa;
-      --exotic-bg3: #f8efd4;
-      --exotic-bg4: #fafdff;
+      --exotic-green: #4ecca3;
+      --exotic-bg1: #181c20;
+      --exotic-bg2: #232b36;
+      --exotic-bg3: #232b36;
+      --exotic-bg4: #181c20;
       --military-green: #223322;
       --military-green-dark: #1a241a;
       --military-green-light: #2e4637;
-      --military-grey: #f8f8f8;
-      --military-black: #111;
-      --military-accent: #217a8a;
-      --military-accent-dark: #15505a;
-      --military-border: #b2dfdb;
-      --military-text: #111;
-      --military-soft: #444e5a;
-      --military-alert: #3aafa9;
+      --military-grey: #232b36;
+      --military-black: #181c20;
+      --military-accent: #3aafa9;
+      --military-accent-dark: #357a7b;
+      --military-border: #28313a;
+      --military-text: #e0e6ed;
+      --military-soft: #b0bec5;
+      --military-alert: #4ecca3;
       --radius: 14px;
       --shadow: 0 2px 12px 0 rgba(58,175,169,0.10);
       --transition: 0.22s cubic-bezier(.4,2,.6,1);
@@ -125,7 +122,7 @@
     /* Hero Section */
     .hero {
       min-height: 50vh;
-      background: #fff;
+      background: var(--military-grey);
       border-radius: 0 0 24px 24px;
       box-shadow: 0 4px 16px 0 rgba(58,175,169,0.08);
       margin-bottom: 2em;
@@ -141,8 +138,8 @@
       width: 100px;
       height: 100px;
       border-radius: 50%;
-      background: linear-gradient(135deg, var(--exotic-blue) 60%, var(--exotic-green) 100%);
-      box-shadow: 0 0 0 2px var(--exotic-blue), 0 0 8px var(--exotic-blue);
+      background: linear-gradient(135deg, #232b36 60%, #3aafa9 100%);
+      box-shadow: 0 0 0 2px #3aafa9, 0 0 8px #232b36;
       margin-bottom: 1em;
       animation: none;
       display: flex;
@@ -157,7 +154,7 @@
     }
     .hero-title {
       color: var(--military-accent);
-      text-shadow: 0 1px 2px #b2dfdb;
+      text-shadow: 0 1px 2px #181c20;
       font-family: 'Share Tech Mono', monospace;
       font-size: clamp(1.3rem, 4vw, 2.1rem);
       letter-spacing: 0.13em;
@@ -172,16 +169,16 @@
     }
     .hero-slogan {
       font-size: clamp(1em, 2vw, 1.1rem);
-      color: var(--military-soft);
+      color: var(--military-accent);
       margin-bottom: 1em;
       text-align: center;
       font-style: italic;
       font-family: 'Share Tech Mono', monospace;
-      background: #f8efd4;
+      background: #232b36;
       border-radius: 10px;
       padding: 0.5em 1em;
-      box-shadow: 0 1px 4px 0 #b2dfdb;
-      border: 1px solid #b2dfdb;
+      box-shadow: 0 1px 4px 0 #181c20;
+      border: 1px solid #28313a;
       max-width: 600px;
       margin-left: auto;
       margin-right: auto;
@@ -193,16 +190,16 @@
     }
     .hero-subtitle {
       font-size: clamp(0.98em, 2vw, 1.05rem);
-      color: #333a44;
+      color: var(--military-soft);
       margin-bottom: 1.2em;
       text-align: center;
       max-width: 98vw;
       font-style: italic;
-      border-left: 4px solid #b2dfdb;
-      border-right: 4px solid #b2dfdb;
-      background: #e0f7fa;
+      border-left: 4px solid #3aafa9;
+      border-right: 4px solid #3aafa9;
+      background: #181c20;
       padding: 0.5em 1em;
-      box-shadow: 0 1px 4px 0 #b2dfdb;
+      box-shadow: 0 1px 4px 0 #181c20;
       border-radius: 8px;
       box-sizing: border-box;
     }
@@ -218,7 +215,7 @@
     }
     .hero-cta a {
       background: var(--military-accent);
-      color: #fff;
+      color: #181c20;
       font-family: 'Share Tech Mono', monospace;
       font-weight: bold;
       border-radius: 14px;
@@ -226,7 +223,7 @@
       font-size: 1em;
       text-decoration: none;
       box-shadow: 0 2px 8px 0 rgba(58,175,169,0.10);
-      border: 1.5px solid #b2dfdb;
+      border: 1.5px solid #28313a;
       transition: background var(--transition), color var(--transition), box-shadow var(--transition), border var(--transition);
       letter-spacing: 0.04em;
       display: flex;
@@ -237,8 +234,8 @@
     }
     .hero-cta a:hover {
       background: var(--military-accent-dark);
-      color: #fff;
-      box-shadow: 0 0 12px #b2dfdb;
+      color: #e0e6ed;
+      box-shadow: 0 0 12px #28313a;
       border-color: var(--military-accent-dark);
     }
     .cv-link {
@@ -254,7 +251,7 @@
       max-width: var(--max-width);
       width: 100%;
       margin: 2.5em auto;
-      background: rgba(34,51,34,0.85);
+      background: #232b36;
       border-radius: var(--radius);
       box-shadow: var(--shadow);
       padding: clamp(1em, 4vw, 2.2em) clamp(0.5em, 4vw, 1.5em);
